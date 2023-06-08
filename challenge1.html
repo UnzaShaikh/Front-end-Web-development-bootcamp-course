@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Challenge 1
+    </title>
+</head>
+<body>
+    Hwllo to js World
+</body>
+<script>
+// Create a boolean variable called 'myBoolean' and set it to 'true'.
+let myBoolean = true;
+// Create a String variable called 'myString' and set it to 'hellow world'.
+let myString = 'Hello World';
+// Create a number variable called 'firstNumber' and set it to '20'.
+let firstNumber = 20;
+// Create a anothrt number variable called 'seconfNumber' and set it to '40'.
+let secondNumber = 40;
+// re-assign 'secondNumber' and set it equal to '80'.
+secondNumber = 80;
+// create an aray called 'myArray' and put 'myBoolean' at index 0 , and myString at index 1.
+let myArray = [myBoolean,myString];
+// create an object called  'myObject' and assign 'myArray' to a property called 'firstProperty', and the sum of 'firstNumber' and 'secondNumber' to a property called 'sumProperty'
+let myObject = {
+    firstProperty : myArray,
+    sumProperty : firstNumber + secondNumber,
+}
+//print the my object to the console.
+console.log(myObject);
+// print the 'sumProperty' of 'myObject' to the console.
+console.log(myObject.sumProperty);
+//print the value at index 1 of firstProperty.
+console.log(myObject.firstProperty[1]);
+// CHALLENGE 5
+/* 
+
+There are two things wrong with this line
+1. The variable is invalid.  It should be `someNumber`, not `some Number`.  There is an extra space.
+2. We should be using `let` here because later in the code, we re-assign the value of the variable
+
+*/
+// const some Number = 20;
+
+// 3. This line is missing a semi-colon at the end
+someNumber = 50
+// CHALLENGE 5 (2)
+const variable1 = 20;
+const variable2 = '40';
+
+const resultVariable = variable1 + Number(variable2);
+
+console.log(resultVariable); // Prints 60, and is a number
+// CHALLENGE 5 (3)
+
+// const objectVariable = {
+//   property1: 'i am property 1';
+//   property2: 'i am property 2';
+//   property3: [20, 30, 40];
+// };
+
+console.log(objectVariable.property3[2]);
+// The code above is invalid because it contains semi-colons ; in the wrong places.
+
+// When creating objects, you need to place a comma after each object, NOT a semi-colon.
+
+// Here is the fixed program that will properly run in your Console.
+
+const objectVariable = {
+  property1: 'i am property 1',
+  property2: 'i am property 2',
+  property3: [20, 30, 40]
+};
+
+console.log(objectVariable.property3[2]);
+</script>
+</html>
+
