@@ -35,7 +35,7 @@ console.log(myObject);
 console.log(myObject.sumProperty);
 //print the value at index 1 of firstProperty.
 console.log(myObject.firstProperty[1]);
-// CHALLENGE 5
+// CHALLENGE 2
 /* 
 
 There are two things wrong with this line
@@ -47,14 +47,14 @@ There are two things wrong with this line
 
 // 3. This line is missing a semi-colon at the end
 someNumber = 50
-// CHALLENGE 5 (2)
+// CHALLENGE 3 
 const variable1 = 20;
 const variable2 = '40';
 
 const resultVariable = variable1 + Number(variable2);
 
 console.log(resultVariable); // Prints 60, and is a number
-// CHALLENGE 5 (3)
+// CHALLENGE 4
 
 // const objectVariable = {
 //   property1: 'i am property 1';
@@ -76,6 +76,21 @@ const objectVariable = {
 };
 
 console.log(objectVariable.property3[2]);
+// CHALLENGE 5
+const mySecArray = [20, 30, 40];
+
+console.log(mySecArray[3]);
+// The above code is invalid because it attempts to print the value at index 3, but there is no index 3 in this array!
+
+// Remember, arrays start their indexing at 0, so this array has the following index values:
+
+// Index         0   1    2
+const mySecArray = [20, 30, 40];
+// And therefore, this is the correct way to write this program.
+
+const mySecArray = [20, 30, 40];
+
+console.log(mySecArray[2]);
 </script>
 </html>
 
