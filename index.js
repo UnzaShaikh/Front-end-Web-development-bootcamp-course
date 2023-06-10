@@ -11,4 +11,3 @@ console.log(typeof(myNum));
 
 
 
-console.log(9 - "5");
